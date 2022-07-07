@@ -5,8 +5,11 @@ public class forTask {
 
         num = 19;
 
-        if(num < 2) isPrime = false;
-        else isPrime = true;
+        if (num < 2) {
+            isPrime = false;
+        } else {
+            isPrime = true;
+        }
 
         for(int i = 2; i <= num/i; i++) {
             if((num % i) == 0) {
