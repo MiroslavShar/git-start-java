@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
 
 public class main {
     public static void main(String args[]) throws IOException {
@@ -9,9 +10,9 @@ public class main {
         cykl4();
         doWhile();
         forTask();
-        unlimited();
         kirillica();
         taskIf();
+        unlimited();
 
 
         int num;
@@ -117,10 +118,7 @@ public class main {
             if (isPrime) System.out.println("Prostoje chislo");
             else System.out.println("Ne prostoje chislo");
     }
-    public static void unlimited() {
-        for ( ; ; );
-    }
-    public static void kirillica() {
+    public static void kirillica() throws IOException {
         System.setOut(new PrintStream(System.out, true, "cp866"));
 
         System.out.println("Привет кириллица");
@@ -130,5 +128,8 @@ public class main {
         int num = 999;
         int bob = 800;
         if (num > bob) System.out.println("num > bob");
+    }
+    public static void unlimited() {
+        for ( ; ; );
     }
 }
