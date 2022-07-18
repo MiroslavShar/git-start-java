@@ -7,20 +7,11 @@ public class main {
         HashSet<Integer> myHashSet = new HashSet<>();
 
         myHashSet.add(1);
-        myHashSet.add(2);
-        myHashSet.add(3);
+        myHashSet.add(21);
+        myHashSet.add(11);
 
-        //We add 1 one more time
-        myHashSet.add(1);
+        System.out.println("Does myHashSet contain '1'? " + myHashSet.contains(1));
+        System.out.println("Does myHashSet contain '11'? " + myHashSet.contains(11));
 
-        System.out.println("Before remove: ");
-        for (int i : myHashSet){
-            System.out.println(i);
-        }
-        myHashSet.remove(1);
-        System.out.println("After remove:");
-        for (int i : myHashSet){
-            System.out.println(i);
-        }
     }
 }
