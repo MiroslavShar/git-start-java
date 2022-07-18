@@ -15,6 +15,6 @@ public class main {
         System.out.println("Now myHashSet is " + myHashSet.size());
         myHashSet.clear();
         System.out.println("After clear myHashSet size is " + myHashSet.size());
-
+        System.out.println("After clear myHashSet is empty: " + myHashSet.isEmpty());
     }
 }
