@@ -13,6 +13,12 @@ public class main {
         //We add 1 one more time
         myHashSet.add(1);
 
+        System.out.println("Before remove: ");
+        for (int i : myHashSet){
+            System.out.println(i);
+        }
+        myHashSet.remove(1);
+        System.out.println("After remove:");
         for (int i : myHashSet){
             System.out.println(i);
         }
